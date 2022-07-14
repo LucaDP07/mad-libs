@@ -1,34 +1,50 @@
 import time
+
+import random
 print("Welcome to the Mad Libs Game")
 time.sleep(2)
-playing = input("Let's play, shall we?\n")
+answer = input("Let's play, shall we?\n")
 
-answer = "okay"
+# answer = "okay" 
 while answer not in ["Yes", "yes", "Y", "y", "No", "no", "N", "n"]: 
-    answer = input("Wrong input. Do you want to play? Yes or No\n") 
+        
+        answer = input("Wrong input. Do you want to play? Yes or No\n") 
 
-if answer=="Yes" or answer=="yes" or answer=="Y" or answer=="y": 
+if answer == "Yes" or answer == "yes" or answer == "Y" or answer == "y": 
         print("Ok, let's play the game: \n")
-elif answer=="No" or answer=="no" or answer=="N" or answer=="n": 
+elif answer == "No" or answer == "no" or answer == "N" or answer == "n": 
         print("That's fine. See you soon\n") 
         quit()
 else: 
         print("Please type Yes or No\n") 
 
 # User inputs story #1
-
+colors = ['red', 'blue', 'green']
 noun = input("Enter your name: ")
 number = input("Enter your age: ")
+while not number.isnumeric():
+        number = input("Enter your age, should be a number: ")
+noun4 = input("Enter the name of a friend: ")
 adj = input("Enter an adjective: ")
-color = input("Enter a color: ")
+print ('Select number of colour')
+for i,colour in enumerate(colors):
+    print(i+1, colour)
+chosen=input('')
+while not chosen.isnumeric() or int(chosen)>len(colors):
+        chosen = input("invalid data: ")
+color=colors[int(chosen)-1]
 noun2 = input("Enter a noun: ")
 food = input("Enter a type of food(plural): ")
 noun3 = input("Enter a noun: ")
 verb = input("Enter a verb ending in 'ing': ")
+while not verb.endswith('ing'):
+        verb = input("invalid: ")
 clothing = input("Enter an article of clothing: ")
 adj2 = input("Enter an adjective: ")
 celebrity = input("Enter the name of a celebrity: ")
 number2 = input("Enter a number: ")
+while not number2.isnumeric():
+        number2 = input("Enter a number, should be a number: ")
 noun4 = input("Enter the name of a friend: ")
 noun5 = input("Enter a noun: ")
 noun6= input("Enter the name of another friend: ")
@@ -212,3 +228,5 @@ time.sleep(3)
 print("It's a " + adj7 + " time to " + verb4 + " things like go " + verb5 + " at a " + noun2 + " or to explore " + adj8 + " places.")
 time.sleep(3)
 print("What's your " + adj8 + " type of " + noun3 + "?")
+
+
