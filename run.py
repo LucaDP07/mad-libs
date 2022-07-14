@@ -1,15 +1,19 @@
 import time
 
 # Welcome messages
+
 print("Welcome to the Mad Libs Game")
 time.sleep(2)
 answer = input("Let's play, shall we?\n")
 
 # While loop
+
 while answer not in ["Yes", "yes", "Y", "y", "No", "no", "N", "n"]: 
         
         answer = input("Wrong input. Do you want to play? Yes or No\n") 
+
 # If statement
+
 if answer == "Yes" or answer == "yes" or answer == "Y" or answer == "y": 
         print("Ok, let's play the game: \n")
 elif answer == "No" or answer == "no" or answer == "N" or answer == "n": 
@@ -19,14 +23,16 @@ else:
         print("Please type Yes or No\n") 
 
 # User inputs story #1
+
 colors = ['red', 'blue', 'green']
+clothing = ['socks', 'pajamas', 'skirt']
 noun = input("Enter your name: ")
 number = input("Enter your age: ")
 while not number.isnumeric():
         number = input("Enter your age, should be a number: ")
 noun4 = input("Enter the name of a friend: ")
 adj = input("Enter an adjective: ")
-print ('Select number of colour')
+print ('Select number of color')
 for i,colour in enumerate(colors):
     print(i+1, colour)
 chosen=input('')
@@ -34,12 +40,16 @@ while not chosen.isnumeric() or int(chosen)>len(colors):
         chosen = input("invalid data: ")
 color=colors[int(chosen)-1]
 noun2 = input("Enter a noun: ")
-food = input("Enter a type of food(plural): ")
-noun3 = input("Enter a noun: ")
 verb = input("Enter a verb ending in 'ing': ")
 while not verb.endswith('ing'):
         verb = input("invalid: ")
-clothing = input("Enter an article of clothing: ")
+print ('Select your clothing')
+for i,clothes in enumerate(clothing):
+    print(i+1, clothes)
+chosen=input('')
+while not chosen.isnumeric() or int(chosen)>len(clothing):
+        chosen = input("invalid data: ")
+clothings=clothing[int(chosen)-1]
 adj2 = input("Enter an adjective: ")
 celebrity = input("Enter the name of a celebrity: ")
 number2 = input("Enter a number: ")
@@ -48,7 +58,6 @@ while not number2.isnumeric():
 noun4 = input("Enter the name of a friend: ")
 noun5 = input("Enter a noun: ")
 noun6= input("Enter the name of another friend: ")
-occupation = input("Enter an occupation: ")
 time.sleep(1)
 
 # Print story #1
@@ -64,9 +73,9 @@ print("I would drive the biggest " + color + " car in the country, and that")
 time.sleep(3)
 print("car would go faster than any other " + noun2 + " in the world!")
 time.sleep(3)
-print("Everyone would eat pepperoni " + food + " for dinner.")
+print("Everyone would eat pepperoni pizza for dinner.")
 time.sleep(3)
-print("I would live in the Statue of " + noun3 + " and build a " + verb + " pool at her feet.")
+print("I would live in the Statue of Liberty and build a " + verb + " pool at her feet.")
 time.sleep(3)
 print("I would wear a/an " + clothing + " on my head, and everyone would say I look " + adj2 + " like " + celebrity + ".")
 time.sleep(3)
@@ -75,16 +84,20 @@ time.sleep(3)
 print("I would give my friends the best jobs.")
 time.sleep(3)
 print("I would nominate " + noun4 + " to be secretary of the " + noun5 + ",")
-print("and " + noun6 + " could be vice " + occupation + " !")
+print("and " + noun6 + " could be vice president !")
 time.sleep(3)
 play = input("Play again?")
 
 answer = input("Let's play, shall we?\n")
+
 # While loop
+
 while answer not in ["Yes", "yes", "Y", "y", "No", "no", "N", "n"]: 
         
         answer = input("Wrong input. Do you want to play? Yes or No\n") 
+
 # If statement
+
 if answer == "Yes" or answer == "yes" or answer == "Y" or answer == "y": 
         print("Ok, let's play the game: \n")
 elif answer == "No" or answer == "no" or answer == "N" or answer == "n": 
@@ -131,11 +144,15 @@ time.sleep(3)
 play = input("Play again?")
 
 answer = input("Let's play, shall we?\n")
+
 # While loop
+
 while answer not in ["Yes", "yes", "Y", "y", "No", "no", "N", "n"]: 
         
         answer = input("Wrong input. Do you want to play? Yes or No\n") 
+
 # If statement
+
 if answer == "Yes" or answer == "yes" or answer == "Y" or answer == "y": 
         print("Ok, let's play the game: \n")
 elif answer == "No" or answer == "no" or answer == "N" or answer == "n": 
@@ -187,11 +204,15 @@ time.sleep(3)
 play = input("Play again?")
 
 answer = input("Let's play, shall we?\n")
+
 # While loop
+
 while answer not in ["Yes", "yes", "Y", "y", "No", "no", "N", "n"]: 
         
         answer = input("Wrong input. Do you want to play? Yes or No\n") 
+
 # If statement
+
 if answer == "Yes" or answer == "yes" or answer == "Y" or answer == "y": 
         print("Ok, let's play the game: \n")
 elif answer == "No" or answer == "no" or answer == "N" or answer == "n": 
@@ -236,11 +257,15 @@ time.sleep(3)
 print("What's your " + adj8 + " type of " + noun3 + "?")
 
 answer = input("Let's play, shall we?\n")
+
 # While loop
+
 while answer not in ["Yes", "yes", "Y", "y", "No", "no", "N", "n"]: 
         
         answer = input("Wrong input. Do you want to play? Yes or No\n") 
+
 # If statement
+
 if answer == "Yes" or answer == "yes" or answer == "Y" or answer == "y": 
         print("Ok, let's play the game: \n")
 elif answer == "No" or answer == "no" or answer == "N" or answer == "n": 
