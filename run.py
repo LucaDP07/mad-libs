@@ -133,9 +133,25 @@ adj4 = input("Enter an adjective: ")
 verb3 = input("Enter a verb: ")
 noun6 = input("Enter a noun: ")
 verb4 = input("Enter a verb ending in 'ing': ")
+
+while not verb.endswith('ing'):
+        verb = input("invalid data: ")
+
 verb5 = input("Enter a verb ending in 'ing': ")
+
+while not verb.endswith('ing'):
+        verb = input("invalid data: ")
+
 verb6 = input("Enter a verb ending in 'ing': ")
+
+while not verb.endswith('ing'):
+        verb = input("invalid data: ")
+
 verb7 = input("Enter a verb ending in 'ing': ")
+
+while not verb.endswith('ing'):
+        verb = input("invalid data: ")
+
 adj5 = input("Enter an adjective: ")
 verb8 = input("Enter a verb: ")
 
@@ -239,8 +255,16 @@ adj12 = input("Enter an adjective: ")
 noun19 = input("Enter a month: ")
 print("Select an adjective: ")
 verb15 = input("Enter a verb ending in 'ing': ")
+
+while not verb.endswith('ing'):
+        verb = input("invalid data: ")
+
 adj13 = input("Enter an adjective: ")
 verb16 = input("Enter a verb ending in 'ing': ")
+
+while not verb.endswith('ing'):
+        verb = input("invalid data: ")
+
 adj14 = input("Enter an adjective: ")
 adj15 = input("Enter an adjective: ")
 adj16 = input("Enter an adjective: ")
@@ -248,6 +272,10 @@ print("Select a verb: ")
 adj17 = input("Enter an adjective: ")
 verb18 = input("Enter a verb: ")
 verb19 = input("Enter a verb ending in 'ing': ")
+
+while not verb.endswith('ing'):
+        verb = input("invalid data: ")
+        
 noun20 = input("Enter a noun: ")
 
 # print story 4
