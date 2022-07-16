@@ -98,13 +98,12 @@ print("and " + friend2 + " could be vice president !")
 time.sleep(3)
 play = input("Play again?")
 
-answer = input("Let's play, shall we?\n")
 
 # While loop
 
-while answer not in ["Yes", "yes", "Y", "y", "No", "no", "N", "n"]: 
+while play not in ["Yes", "yes", "Y", "y", "No", "no", "N", "n"]: 
         
-        answer = input("Wrong input. Do you want to play? Yes or No\n")  
+        play = input("Wrong input. Do you want to play? Yes or No\n")  
 
 # If statement
 
@@ -121,36 +120,50 @@ else:
 adj3 = ['beautiful', 'breakable', 'meaningless']
 noun3 = ['peak', 'jungle', 'beach']
 verb2 = input("Enter a verb ending in 'ing': ")
+
+while not verb2.endswith('ing'):
+        verb2 = input("invalid data: ")
+
 print ("Select a place: ")
+
+for i,noun3 in enumerate(noun3):
+        print(i+1, noun3)
+chosen=input('')
+while not chosen.isnumeric() or int(chosen)>len(noun3):
+        chosen = input("invalid data: ")
+place=noun3[int(chosen)-1]
+
 print ('Select an adjective')
-for i,adjective in enumerate(adj3):
-    print(i+1, adjective)
+
+for i,adj3 in enumerate(adj3):
+    print(i+1, adj3)
 chosen=input('')
 while not chosen.isnumeric() or int(chosen)>len(adj3):
         chosen = input("invalid data: ")
 adjective=adj3[int(chosen)-1]
+
 adj4 = input("Enter an adjective: ")
 verb3 = input("Enter a verb: ")
 noun6 = input("Enter a noun: ")
 verb4 = input("Enter a verb ending in 'ing': ")
 
-while not verb.endswith('ing'):
-        verb = input("invalid data: ")
+while not verb4.endswith('ing'):
+        verb4 = input("invalid data: ")
 
 verb5 = input("Enter a verb ending in 'ing': ")
 
-while not verb.endswith('ing'):
-        verb = input("invalid data: ")
+while not verb5.endswith('ing'):
+        verb5 = input("invalid data: ")
 
 verb6 = input("Enter a verb ending in 'ing': ")
 
-while not verb.endswith('ing'):
-        verb = input("invalid data: ")
+while not verb6.endswith('ing'):
+        verb6 = input("invalid data: ")
 
 verb7 = input("Enter a verb ending in 'ing': ")
 
-while not verb.endswith('ing'):
-        verb = input("invalid data: ")
+while not verb7.endswith('ing'):
+        verb7 = input("invalid data: ")
 
 adj5 = input("Enter an adjective: ")
 verb8 = input("Enter a verb: ")
@@ -171,13 +184,12 @@ print("and " + verb7 + " villages and " + adj5 + " mountains as we " + verb8  + 
 time.sleep(3)
 play = input("Play again?")
 
-answer = input("Let's play, shall we?\n")
 
 # While loop
 
-while answer not in ["Yes", "yes", "Y", "y", "No", "no", "N", "n"]: 
+while play not in ["Yes", "yes", "Y", "y", "No", "no", "N", "n"]: 
         
-        answer = input("Wrong input. Do you want to play? Yes or No\n") 
+        play = input("Wrong input. Do you want to play? Yes or No\n")  
 
 # If statement
 
@@ -194,6 +206,14 @@ else:
 color2 = ['purple', 'yellow', 'black']
 noun12 = ['December', 'August', 'October']
 print("Select the name of a month ")
+
+for i,noun12 in enumerate(noun12):
+    print(i+1, noun12)
+chosen=input('')
+while not chosen.isnumeric() or int(chosen)>len(noun12):
+        chosen = input("invalid data: ")
+noun=noun12[int(chosen)-1]
+
 verb9 = input("Enter a verb: ")
 adj6 = input("Enter an adjective: ")
 adj7 = input("Enter an adjective: ")
@@ -203,6 +223,14 @@ noun17 = input("Enter a noun: ")
 adj8 = input("Enter an adjective: ")
 adj9 = input("Enter an adjective: ")
 print("Select a color ")
+
+for i,color2 in enumerate(color2):
+    print(i+1, color2)
+chosen=input('')
+while not chosen.isnumeric() or int(chosen)>len(color2):
+        chosen = input("invalid data: ")
+color=color2[int(chosen)-1]
+
 adj10 = input("Enter an adjective: ")
 verb12 = input("Enter a verb: ")
 verb13 = input("Enter a verb: ")
@@ -229,13 +257,12 @@ print("It's Christmas now!")
 time.sleep(3)
 play = input("Play again?")
 
-answer = input("Let's play, shall we?\n")
 
 # While loop
 
-while answer not in ["Yes", "yes", "Y", "y", "No", "no", "N", "n"]: 
+while play not in ["Yes", "yes", "Y", "y", "No", "no", "N", "n"]: 
         
-        answer = input("Wrong input. Do you want to play? Yes or No\n") 
+        play = input("Wrong input. Do you want to play? Yes or No\n")  
 
 # If statement
 
@@ -254,28 +281,44 @@ verb14 = ['jump', 'meet', 'send']
 adj12 = input("Enter an adjective: ")
 noun19 = input("Enter a month: ")
 print("Select an adjective: ")
+
+for i,adj11 in enumerate(adj11):
+    print(i+1, adj11)
+chosen=input('')
+while not chosen.isnumeric() or int(chosen)>len(adj11):
+        chosen = input("invalid data: ")
+adjective=adj11[int(chosen)-1]
+
 verb15 = input("Enter a verb ending in 'ing': ")
 
-while not verb.endswith('ing'):
-        verb = input("invalid data: ")
+while not verb15.endswith('ing'):
+        verb15 = input("invalid data: ")
 
 adj13 = input("Enter an adjective: ")
 verb16 = input("Enter a verb ending in 'ing': ")
 
-while not verb.endswith('ing'):
-        verb = input("invalid data: ")
+while not verb16.endswith('ing'):
+        verb16 = input("invalid data: ")
 
 adj14 = input("Enter an adjective: ")
 adj15 = input("Enter an adjective: ")
 adj16 = input("Enter an adjective: ")
 print("Select a verb: ")
+
+for i,verb14 in enumerate(verb14):
+    print(i+1, verb14)
+chosen=input('')
+while not chosen.isnumeric() or int(chosen)>len(verb14):
+        chosen = input("invalid data: ")
+verb=verb14[int(chosen)-1]
+
 adj17 = input("Enter an adjective: ")
 verb18 = input("Enter a verb: ")
 verb19 = input("Enter a verb ending in 'ing': ")
 
-while not verb.endswith('ing'):
-        verb = input("invalid data: ")
-        
+while not verb19.endswith('ing'):
+        verb19 = input("invalid data: ")
+
 noun20 = input("Enter a noun: ")
 
 # print story 4
@@ -292,6 +335,8 @@ time.sleep(3)
 print("It's a " + adj17 + " time to " + verb18 + " things like go " + verb19 + " at a " + noun20 + " or to explore new places.")
 time.sleep(3)
 print("What's your type of weather?")
+
+#Game Over message. Restart game?
 
 answer = input("Let's play, shall we?\n")
 
