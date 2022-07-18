@@ -1,5 +1,4 @@
 import time
-#import random
 
 # Welcome messages
 
@@ -24,50 +23,95 @@ else:
         print("Please type Yes or No\n") 
 
 # User inputs story 1
-
-colours = ['red', 'blue', 'green']
-clothings = ['socks', 'pajamas', 'skirt']
 name = input("Enter your name: ")
+
 age = input("Enter your age: ")
-
 while not age.isnumeric():
- age = input("Enter your age, should be a number: ")
+        age = input("Enter your age, should be a number: ")
 
-adj = input("Enter an adjective: ")
-print ('Select number of color')
-
-for i,colour in enumerate(colours):
-        print(i+1, colour)
+adj= ['perfect', 'rough', 'gentle']
+print ('Select an adjective: ')
+for i,adj in enumerate(adj):
+        print(i+1, adj)
 chosen=input('')
-while not chosen.isnumeric() or int(chosen)>len(colours):
-        chosen = input("invalid data: ")
-color=colours[int(chosen)-1]
+while not chosen.isnumeric() or int(chosen)>len(adj):
+        chosen = input("Invalid data: Select an adjective")
+aj=adj[int(chosen)-1]
 
-noun = input("Enter a noun: ")
-verb = input("Enter a verb ending in 'ing': ")
+color = ['red', 'blue', 'green']
+print ('Select a color')
+for i,color in enumerate(color):
+        print(i+1, color)
+chosen=input('')
+while not chosen.isnumeric() or int(chosen)>len(color):
+        chosen = input('Invalid data: Select a color')
+colors=color[int(chosen)-1]
 
-while not verb.endswith('ing'):
-        verb = input("invalid data: ")
+noun= ['car', 'money', 'banana']
+print('Select a noun: ')
+for i,noun in enumerate(noun):
+        print(i+1, noun)
+chosen=input('')
+while not chosen.isnumeric() or int(chosen)>len(noun):
+        chosen = input('Invalid data: Select a noun')
+nn=noun[int(chosen)-1]
 
+verb= ['running', 'starving', 'loving']
+print('Select a verb: ')
+for i,verb in enumerate(verb):
+        print(i+1, verb)
+chosen=input('')
+while not chosen.isnumeric() or int(chosen)>len(verb):
+        chosen = input('Invalid data: Select a verb')
+ver=verb[int(chosen)-1]
+
+clothings = ['socks', 'pajamas', 'skirt']
 print ('Select your clothing')
-
 for i,clothings in enumerate(clothings):
         print(i+1, clothings)
 chosen=input('')
 while not chosen.isnumeric() or int(chosen)>len(clothings):
-        chosen = input("invalid data: ")
+        chosen = input('Invalid data: ')
 cloth=clothings[int(chosen)-1]
 
-adj2 = input("Enter an adjective: ")
-celebrity = input("Enter the name of a celebrity: ")
-number = input("Enter a number: ")
+second_adj= ['angry', 'able', 'busy']
+print('Select an adjective: ')
+for i,second_adj in enumerate(second_adj):
+        print(i+1, second_adj)
+chosen=input('')
+while not chosen.isnumeric() or int(chosen)>len(second_adj):
+        chosen = input('Invalid data: Select an adjective: ')
+adj=second_adj[int(chosen)-1]
 
+celebrity= ['Ryan Reynolds', 'Emma Stone', 'Tom Hanks']
+print('Select a celebrity: ')
+for i,celebrity in enumerate(celebrity):
+        print(i+1, celebrity)
+chosen=input('')
+while not chosen.isnumeric() or int(chosen)>len(celebrity):
+        chosen = input('Invalid data: Select a celebrity: ')
+cel=celebrity[int(chosen)-1]
+
+number = input('Enter a number: ')
 while not number.isnumeric():
-        number = input("Enter a number, should be a number: ")
+        number = input('Enter a number, should be a number: ')
 
-friend = input("Enter the name of a friend: ")
-noun2 = input("Enter a noun: ")
-friend2 = input("Enter the name of another friend: ")
+friend = input('Enter the name of a friend: ')
+while not friend.isalpha():
+        friend = input('Invalida data: Enter a name: ')
+
+second_noun = ['wood', 'ukelele', 'smoothie']
+print('Select a noun: ')
+for i,second_noun in enumerate(second_noun):
+        print(i+1, second_noun)
+chosen=input('')
+while not chosen.isnumeric() or int(chosen)>len(second_noun):
+        chosen = input('Invalid data: Select a noun: ')
+nn=second_noun[int(chosen)-1]
+
+second_friend = input('Enter the name of another friend: ')
+while not second_friend.isalpha():
+        second_friend = input('Invalida data: Enter a name: ')
 time.sleep(1)
 
 # Print story 1
@@ -87,271 +131,13 @@ print("Everyone would eat pepperoni pizza for dinner.")
 time.sleep(3)
 print("I would live in the Statue of Liberty and build a " + verb + " pool at her feet.")
 time.sleep(3)
-print("I would wear a/an " + clothings + " on my head, and everyone would say I look " + adj2 + " like " + celebrity + ".")
+print("I would wear a/an " + clothings + " on my head, and everyone would say I look " + second_adj + " like " + celebrity + ".")
 time.sleep(3)
 print("School would be open only " + number + " days a year.")
 time.sleep(3)
 print("I would give my friends the best jobs.")
 time.sleep(3)
-print("I would nominate " + friend + " to be secretary of the " + noun2 + ",")
-print("and " + friend2 + " could be vice president !")
+print("I would nominate " + friend + " to be secretary of the " + second_noun + ",")
+print("and " + second_friend + " could be vice president !")
 time.sleep(3)
 play = input("Play again?")
-
-
-# While loop
-
-while play not in ["Yes", "yes", "Y", "y", "No", "no", "N", "n"]: 
-        
-        play = input("Wrong input. Do you want to play? Yes or No\n")  
-
-# If statement
-
-if answer == "Yes" or answer == "yes" or answer == "Y" or answer == "y": 
-        print("Ok, let's play the game: \n")
-elif answer == "No" or answer == "no" or answer == "N" or answer == "n": 
-        print("That's fine. See you soon\n") 
-        quit()
-else: 
-        print("Please type Yes or No\n") 
-
-# User inputs story 2
-
-adj3 = ['beautiful', 'breakable', 'meaningless']
-noun3 = ['peak', 'jungle', 'beach']
-verb2 = input("Enter a verb ending in 'ing': ")
-
-while not verb2.endswith('ing'):
-        verb2 = input("invalid data: ")
-
-print ("Select a place: ")
-
-for i,noun3 in enumerate(noun3):
-        print(i+1, noun3)
-chosen=input('')
-while not chosen.isnumeric() or int(chosen)>len(noun3):
-        chosen = input("invalid data: ")
-place=noun3[int(chosen)-1]
-
-print ('Select an adjective')
-
-for i,adj3 in enumerate(adj3):
-    print(i+1, adj3)
-chosen=input('')
-while not chosen.isnumeric() or int(chosen)>len(adj3):
-        chosen = input("invalid data: ")
-adjective=adj3[int(chosen)-1]
-
-adj4 = input("Enter an adjective: ")
-verb3 = input("Enter a verb: ")
-noun6 = input("Enter a noun: ")
-verb4 = input("Enter a verb ending in 'ing': ")
-
-while not verb4.endswith('ing'):
-        verb4 = input("invalid data: ")
-
-verb5 = input("Enter a verb ending in 'ing': ")
-
-while not verb5.endswith('ing'):
-        verb5 = input("invalid data: ")
-
-verb6 = input("Enter a verb ending in 'ing': ")
-
-while not verb6.endswith('ing'):
-        verb6 = input("invalid data: ")
-
-verb7 = input("Enter a verb ending in 'ing': ")
-
-while not verb7.endswith('ing'):
-        verb7 = input("invalid data: ")
-
-adj5 = input("Enter an adjective: ")
-verb8 = input("Enter a verb: ")
-
-# Print story 2
-
-print('\nTitle: Taking the Train')
-print('\n')
-time.sleep(3)
-print("I love " + verb2 + " on a train from my " + noun3 + " to the " + adj3 + " city.")
-time.sleep(3)
-print("Trains are " + adj4 + " because they " + verb3 + " on special rails made of " + noun6 + " instead of roads.")
-time.sleep(3)
-print("It's fun " + verb4 + " for the train and " + verb5 + " the sound as the train arrives.")
-time.sleep(3)
-print("While " + verb6 + " on the train, I like to look out the window and see the countryside, passing valleys ")
-print("and " + verb7 + " villages and " + adj5 + " mountains as we " + verb8  + " past.")
-time.sleep(3)
-play = input("Play again?")
-
-
-# While loop
-
-while play not in ["Yes", "yes", "Y", "y", "No", "no", "N", "n"]: 
-        
-        play = input("Wrong input. Do you want to play? Yes or No\n")  
-
-# If statement
-
-if answer == "Yes" or answer == "yes" or answer == "Y" or answer == "y": 
-        print("Ok, let's play the game: \n")
-elif answer == "No" or answer == "no" or answer == "N" or answer == "n": 
-        print("That's fine. See you soon\n") 
-        quit()
-else: 
-        print("Please type Yes or No\n") 
-
-# User inputs story 3
-
-color2 = ['purple', 'yellow', 'black']
-noun12 = ['December', 'August', 'October']
-print("Select the name of a month ")
-
-for i,noun12 in enumerate(noun12):
-    print(i+1, noun12)
-chosen=input('')
-while not chosen.isnumeric() or int(chosen)>len(noun12):
-        chosen = input("invalid data: ")
-noun=noun12[int(chosen)-1]
-
-verb9 = input("Enter a verb: ")
-adj6 = input("Enter an adjective: ")
-adj7 = input("Enter an adjective: ")
-noun15 = input("Enter the name of a place: ")
-verb11 = input("Enter a verb: ")
-noun17 = input("Enter a noun: ")
-adj8 = input("Enter an adjective: ")
-adj9 = input("Enter an adjective: ")
-print("Select a color ")
-
-for i,color2 in enumerate(color2):
-    print(i+1, color2)
-chosen=input('')
-while not chosen.isnumeric() or int(chosen)>len(color2):
-        chosen = input("invalid data: ")
-color=color2[int(chosen)-1]
-
-adj10 = input("Enter an adjective: ")
-verb12 = input("Enter a verb: ")
-verb13 = input("Enter a verb: ")
-noun18 = input("Enter a noun: ")
-
-# Print story 3
-
-print('\nTitle: Christmas Tree')
-print('\n')
-time.sleep(3)
-print("Every " + noun12 + " we " + verb9 + " to a tree farm far away.")
-time.sleep(3)
-print("Not just any " + adj6 + " farm, a " + adj7 + " tree farm.")
-time.sleep(3)
-print("My dad and I go onto the " + noun15 + " to " + verb11 + " for the perfect " + noun17 + ".")
-time.sleep(3)
-print("Some people like them " + adj8 + " and " + adj9 + " and some like them " + color2 + " and fat.")
-time.sleep(3)
-print("We are searching for a tall and " + adj10 + " one!")
-time.sleep(3)
-print("Then I finally see it. Off we " + verb12 + " saw in hand to " + verb13 + " this year's " + noun18 + " down.")
-time.sleep(3)
-print("It's Christmas now!")
-time.sleep(3)
-play = input("Play again?")
-
-
-# While loop
-
-while play not in ["Yes", "yes", "Y", "y", "No", "no", "N", "n"]: 
-        
-        play = input("Wrong input. Do you want to play? Yes or No\n")  
-
-# If statement
-
-if answer == "Yes" or answer == "yes" or answer == "Y" or answer == "y": 
-        print("Ok, let's play the game: \n")
-elif answer == "No" or answer == "no" or answer == "N" or answer == "n": 
-        print("That's fine. See you soon\n") 
-        quit()
-else: 
-        print("Please type Yes or No\n")  
-
-# User inputs story 4
-
-adj11 = ['salty', 'dirty', 'noisy']
-verb14 = ['jump', 'meet', 'send']
-adj12 = input("Enter an adjective: ")
-noun19 = input("Enter a month: ")
-print("Select an adjective: ")
-
-for i,adj11 in enumerate(adj11):
-    print(i+1, adj11)
-chosen=input('')
-while not chosen.isnumeric() or int(chosen)>len(adj11):
-        chosen = input("invalid data: ")
-adjective=adj11[int(chosen)-1]
-
-verb15 = input("Enter a verb ending in 'ing': ")
-
-while not verb15.endswith('ing'):
-        verb15 = input("invalid data: ")
-
-adj13 = input("Enter an adjective: ")
-verb16 = input("Enter a verb ending in 'ing': ")
-
-while not verb16.endswith('ing'):
-        verb16 = input("invalid data: ")
-
-adj14 = input("Enter an adjective: ")
-adj15 = input("Enter an adjective: ")
-adj16 = input("Enter an adjective: ")
-print("Select a verb: ")
-
-for i,verb14 in enumerate(verb14):
-    print(i+1, verb14)
-chosen=input('')
-while not chosen.isnumeric() or int(chosen)>len(verb14):
-        chosen = input("invalid data: ")
-verb=verb14[int(chosen)-1]
-
-adj17 = input("Enter an adjective: ")
-verb18 = input("Enter a verb: ")
-verb19 = input("Enter a verb ending in 'ing': ")
-
-while not verb19.endswith('ing'):
-        verb19 = input("invalid data: ")
-
-noun20 = input("Enter a noun: ")
-
-# print story 4
-
-print('\nTitle: My Favorite Weather')
-print('\n')
-time.sleep(3)
-print("My " + adj12 + " weather is during the month of " + noun19 + " when it's " + adj11 + " outside and everyone is " + verb15 + " and having a " + adj13 + " time.")
-time.sleep(3)
-print("The sun is " + verb16 + " and bright, and the people wear " + adj14 + " clothes to stay " + adj15 + ".")
-time.sleep(3)
-print("Many people " + verb14 + " on vacation in this weather.")
-time.sleep(3)
-print("It's a " + adj17 + " time to " + verb18 + " things like go " + verb19 + " at a " + noun20 + " or to explore new places.")
-time.sleep(3)
-print("What's your type of weather?")
-
-#Game Over message. Restart game?
-
-answer = input("Let's play, shall we?\n")
-
-# While loop
-
-while answer not in ["Yes", "yes", "Y", "y", "No", "no", "N", "n"]: 
-        
-        answer = input("Wrong input. Do you want to play? Yes or No\n") 
-
-# If statement
-
-if answer == "Yes" or answer == "yes" or answer == "Y" or answer == "y": 
-        print("Ok, let's play the game: \n")
-elif answer == "No" or answer == "no" or answer == "N" or answer == "n": 
-        print("That's fine. See you soon\n") 
-        quit()
-else: 
-        print("Please type Yes or No\n") 
