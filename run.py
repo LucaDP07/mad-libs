@@ -1,5 +1,16 @@
 import time
 
+#Function
+
+def inputsList(a, b):
+    for i,element in enumerate(a):
+        print(i+1, element)
+    chosen=input('')
+    while not chosen.isnumeric() or int(chosen)>len(a):
+        chosen = input("Invalid data: Select" + b)
+    el=a[int(chosen)-1]
+    return el
+
 # Welcome messages
 
 print("Welcome to the Mad Libs Game")
@@ -22,122 +33,99 @@ elif answer == "No" or answer == "no" or answer == "N" or answer == "n":
 else: 
         print("Please type Yes or No\n") 
 
-# User inputs story 1
+
+#User inputs story
+
+#Name input
 name = input("Enter your name: ")
 
+#Age Input
 age = input("Enter your age: ")
 while not age.isnumeric():
-        age = input("Enter your age, should be a number: ")
+ age = input("Enter your age, should be a number: ")
 
-adj= ['perfect', 'rough', 'gentle']
+#Adjectives List
+adj = ['perfect', 'rough', 'gentle']
 print ('Select an adjective: ')
-for i,adj in enumerate(adj):
-        print(i+1, adj)
-chosen=input('')
-while not chosen.isnumeric() or int(chosen)>len(adj):
-        chosen = input("Invalid data: Select an adjective")
-aj=adj[int(chosen)-1]
+adjectiveFirst = inputsList(adj, " an adjective")
 
-color = ['red', 'blue', 'green']
+#Colors List
+colour = ['red', 'blue', 'green']
 print ('Select a color')
-for i,color in enumerate(color):
-        print(i+1, color)
-chosen=input('')
-while not chosen.isnumeric() or int(chosen)>len(color):
-        chosen = input('Invalid data: Select a color')
-colors=color[int(chosen)-1]
+colorFirst = inputsList(colour, "a color")
 
-noun= ['car', 'money', 'banana']
+#Nouns List
+nouns= ['car', 'money', 'banana']
 print('Select a noun: ')
-for i,noun in enumerate(noun):
-        print(i+1, noun)
-chosen=input('')
-while not chosen.isnumeric() or int(chosen)>len(noun):
-        chosen = input('Invalid data: Select a noun')
-nn=noun[int(chosen)-1]
+nounFirst = inputsList(nouns, "a noun")
 
-verb= ['running', 'starving', 'loving']
+#Verbs list
+verbs= ['running', 'starving', 'loving']
 print('Select a verb: ')
-for i,verb in enumerate(verb):
-        print(i+1, verb)
-chosen=input('')
-while not chosen.isnumeric() or int(chosen)>len(verb):
-        chosen = input('Invalid data: Select a verb')
-ver=verb[int(chosen)-1]
+verbFirst = inputsList(verbs, "a verb")
 
+#Clothings List
 clothings = ['socks', 'pajamas', 'skirt']
 print ('Select your clothing')
-for i,clothings in enumerate(clothings):
-        print(i+1, clothings)
-chosen=input('')
-while not chosen.isnumeric() or int(chosen)>len(clothings):
-        chosen = input('Invalid data: ')
-cloth=clothings[int(chosen)-1]
+clothingsFirst = inputsList(clothings, "a clothing")
 
-second_adj= ['angry', 'able', 'busy']
+#Adjectives Second List
+adjSecond= ['angry', 'able', 'busy']
 print('Select an adjective: ')
-for i,second_adj in enumerate(second_adj):
-        print(i+1, second_adj)
-chosen=input('')
-while not chosen.isnumeric() or int(chosen)>len(second_adj):
-        chosen = input('Invalid data: Select an adjective: ')
-adj=second_adj[int(chosen)-1]
+adjectivesSecond = inputsList(adjSecond, "an adjective")
 
-celebrity= ['Ryan Reynolds', 'Emma Stone', 'Tom Hanks']
+#Celebrities List
+celeb= ['Ryan Reynolds', 'Emma Stone', 'Tom Hanks']
 print('Select a celebrity: ')
-for i,celebrity in enumerate(celebrity):
-        print(i+1, celebrity)
-chosen=input('')
-while not chosen.isnumeric() or int(chosen)>len(celebrity):
-        chosen = input('Invalid data: Select a celebrity: ')
-cel=celebrity[int(chosen)-1]
+celebrities = inputsList(celeb, "a celebrity")
 
+#Number Input
 number = input('Enter a number: ')
 while not number.isnumeric():
-        number = input('Enter a number, should be a number: ')
+ number = input('Enter a number, should be a number: ')
 
+#Friend First Input
 friend = input('Enter the name of a friend: ')
 while not friend.isalpha():
-        friend = input('Invalida data: Enter a name: ')
+ friend = input('Invalida data: Enter a name: ')
 
-second_noun = ['wood', 'ukelele', 'smoothie']
+#Nouns Second List
+nounsSecond = ['wood', 'ukelele', 'smoothie']
 print('Select a noun: ')
-for i,second_noun in enumerate(second_noun):
-        print(i+1, second_noun)
-chosen=input('')
-while not chosen.isnumeric() or int(chosen)>len(second_noun):
-        chosen = input('Invalid data: Select a noun: ')
-nn=second_noun[int(chosen)-1]
+nounSecond = inputsList(nounsSecond, "a noun")
 
-second_friend = input('Enter the name of another friend: ')
-while not second_friend.isalpha():
-        second_friend = input('Invalida data: Enter a name: ')
+#Friend Second Input
+friendSecond = input('Enter the name of another friend: ')
+while not friendSecond.isalpha():
+ friendSecond = input('Invalida data: Enter a name: ')
+
 time.sleep(1)
 
-# Print story 1
+# Print story
 
 print('\nTitle: If I were president.')
 print('\n')
 time.sleep(3)
 print("My name is " + name + " and I'm " + age + " years old.")
 time.sleep(3)
-print("If I were president, I'd do a whole bunch of " + adj + " things:")
+print("If I were president, I'd do a whole bunch of " + adjectiveFirst + " things:")
 time.sleep(3)
-print("I would drive the biggest " + color + " car in the country, and that")
+print("I would drive the biggest " + colorFirst + " car in the country, and that")
 time.sleep(3)
-print("car would go faster than any other " + noun + " in the world!")
+print("car would go faster than any other " + nounFirst + " in the world!")
 time.sleep(3)
 print("Everyone would eat pepperoni pizza for dinner.")
 time.sleep(3)
-print("I would live in the Statue of Liberty and build a " + verb + " pool at her feet.")
+print("I would live in the Statue of Liberty and build a " + verbFirst + " pool at her feet.")
 time.sleep(3)
-print("I would wear a/an " + clothings + " on my head, and everyone would say I look " + second_adj + " like " + celebrity + ".")
+print("I would wear a/an " + clothingsFirst + " on my head, and everyone would say I look " + adjectivesSecond + " like " + celebrities + ".")
 time.sleep(3)
 print("School would be open only " + number + " days a year.")
 time.sleep(3)
 print("I would give my friends the best jobs.")
 time.sleep(3)
-print("I would nominate " + friend + " to be secretary of the " + second_noun + ",")
-print("and " + second_friend + " could be vice president !")
+print("I would nominate " + friend + " to be secretary of the " + nounSecond + ",")
+time.sleep(3)
+print("and " + friendSecond + " could be vice president !")
 time.sleep(3)
 play = input("Play again?")
