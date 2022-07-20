@@ -1,6 +1,6 @@
 import time
 
-#Function
+#Function inputs Lists
 
 def inputsList(a, b):
     for i,element in enumerate(a):
@@ -15,24 +15,27 @@ def inputsList(a, b):
 
 print("Welcome to the Mad Libs Game")
 time.sleep(2)
-answer = input("Let's play, shall we?\n")
 
-# While loop
 
-while answer not in ["Yes", "yes", "Y", "y", "No", "no", "N", "n"]: 
-        
-        answer = input("Wrong input. Do you want to play? Yes or No\n") 
+def question():
+    i = 0
+    while i < 2:
+        answer = input("Let's play, shall we?\n")
+        if any(answer.lower() == f for f in ["yes"]):
+            print("Cool, let's play the game!")
+            break
+        elif any(answer.lower() == f for f in ['no', 'n', '0']):
+            print("That's fine. See you soon\n")
+            break
+        else:
+            i += 1
+            if i < 2:
+                print('Please enter yes or no')
+            else:
+                print("Nothing done")
 
-# If statement
-
-if answer == "Yes" or answer == "yes" or answer == "Y" or answer == "y": 
-        print("Ok, let's play the game: \n")
-elif answer == "No" or answer == "no" or answer == "N" or answer == "n": 
-        print("That's fine. See you soon\n") 
-        quit()
-else: 
-        print("Please type Yes or No\n") 
-
+question()
+time.sleep(2)
 
 #User inputs story
 
@@ -81,7 +84,7 @@ celebrities = inputsList(celeb, "a celebrity")
 
 #Number Input
 number = input('Enter a number: ')
-while not number.isnumeric():
+while not number.isnumeric(): 
  number = input('Enter a number, should be a number: ')
 
 #Friend First Input
@@ -101,7 +104,7 @@ while not friendSecond.isalpha():
 
 time.sleep(1)
 
-# Print story
+# Print story - Concat the inputs together in a story
 
 print('\nTitle: If I were president.')
 print('\n')
@@ -128,4 +131,12 @@ print("I would nominate " + friend + " to be secretary of the " + nounSecond + "
 time.sleep(3)
 print("and " + friendSecond + " could be vice president !")
 time.sleep(3)
-play = input("Play again?")
+
+#play = input("Play again? Y/N")
+
+#if answer == "Yes" or answer == "yes" or answer == "Y" or answer == "y": 
+ #print("Ok, let's play again: \n")
+#else: 
+ #quit()
+#input=("\n\nGAMEOVER!\n\nSee you soon!")
+#print("\n\n\n")
