@@ -11,36 +11,34 @@ def inputsList(a, b):
     el=a[int(chosen)-1]
     return el
 
-# Welcome messages
-
-print("Welcome to the Mad Libs Game")
-time.sleep(2)
-
+# Welcome message
 
 def question():
-    i = 0
-    while i < 2:
-        answer = input("Let's play, shall we?\n")
-        if any(answer.lower() == f for f in ["yes"]):
-            print("Cool, let's play the game!")
-            break
-        elif any(answer.lower() == f for f in ['no', 'n', '0']):
-            print("That's fine. See you soon\n")
-            break
-        else:
-            i += 1
-            if i < 2:
-                print('Please enter yes or no')
-            else:
-                print("Nothing done")
+    answer = input("Let's play, shall we?\n")
+    while not any(answer.lower() == f for f in ['yes', 'y', "no", "n"]):
+        answer = input('Please enter yes or no')
+    if any(answer.lower() == f for f in ['yes', 'y']):
+        print("Cool, let's play the game!")
+        
+    else:
+        print("That's fine. See you soon\n")
+        quit()
 
+
+print("Welcome to the Mad Libs Game")
+time.sleep(2)       
 question()
+                
+               
 time.sleep(2)
 
 #User inputs story
 
 #Name input
 name = input("Enter your name: ")
+while not name.isalpha():
+ name= input("Enter a name: ")
+
 
 #Age Input
 age = input("Enter your age: ")
@@ -49,7 +47,7 @@ while not age.isnumeric():
 
 #Adjectives List
 adj = ['perfect', 'rough', 'gentle']
-print ('Select an adjective: ')
+print('Select an adjective: ')
 adjectiveFirst = inputsList(adj, " an adjective")
 
 #Colors List
@@ -131,12 +129,3 @@ print("I would nominate " + friend + " to be secretary of the " + nounSecond + "
 time.sleep(3)
 print("and " + friendSecond + " could be vice president !")
 time.sleep(3)
-
-#play = input("Play again? Y/N")
-
-#if answer == "Yes" or answer == "yes" or answer == "Y" or answer == "y": 
- #print("Ok, let's play again: \n")
-#else: 
- #quit()
-#input=("\n\nGAMEOVER!\n\nSee you soon!")
-#print("\n\n\n")
