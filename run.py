@@ -14,7 +14,8 @@ def inputs_list(a, b):
 
 #Function to start the game
 
-def question():
+
+def start_game():
     answer = input("Let's play, shall we?\n")
     while not any(answer.lower() == f for f in ['yes', 'y', "no", "n"]):
         answer = input('Please enter yes or no')
@@ -41,7 +42,7 @@ def run_game():
 
     #Calls the Question Function   
     
-    question()               
+    start_game()               
     time.sleep(2)
 
     #User inputs story
