@@ -20,7 +20,7 @@ def start_game():
     while not any(answer.lower() == f for f in ['yes', 'y', "no", "n"]):
         answer = input('Please enter yes or no')
     if any(answer.lower() == f for f in ['yes', 'y']):
-        print("Cool, let's play the game!")  
+        print("Cool, let's play the game!")
     else:
         print("That's fine. See you soon\n")
         quit()
@@ -93,7 +93,7 @@ def select_celebrity():
 
 def select_number():
     number = input('Enter a number: ')
-    while not number.isnumeric(): 
+    while not number.isnumeric():
         number = input('Enter a number, should be a number: ')
     return number
 
@@ -118,14 +118,14 @@ def select_friend_two():
         friend_second = input('Invalida data: Enter a name: ')
         return friend_second
 
-    
+
 def run_game():
     print("Welcome to the Mad Libs Game")
-    time.sleep(2) 
+    time.sleep(2)
 
-    # Calls the Question Function   
-    
-    start_game()               
+    # Calls the Question Function
+    start_game()
+
     time.sleep(2)
 
     # User inputs story
