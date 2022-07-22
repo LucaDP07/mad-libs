@@ -2,7 +2,8 @@ import time
 
 #Function inputs Lists
 
-def inputsList(a, b):
+
+def inputs_list(a, b):
     for i,element in enumerate(a):
         print(i+1, element)
     chosen=input('')
@@ -11,7 +12,7 @@ def inputsList(a, b):
     el=a[int(chosen)-1]
     return el
 
-# Welcome message
+#Function to start the game
 
 def question():
     answer = input("Let's play, shall we?\n")
@@ -24,108 +25,118 @@ def question():
         print("That's fine. See you soon\n")
         quit()
 
+# Welcome message
+def select_color():
+    colour = ['red', 'blue', 'green']
+    print ('Select a color')
+    colorFirst = inputs_list(colour, "a color")
+    return colorFirst
 
-print("Welcome to the Mad Libs Game")
-time.sleep(2)       
-question()
-                
-               
-time.sleep(2)
-
-#User inputs story
-
-#Name input
-name = input("Enter your name: ")
-while not name.isalpha():
- name= input("Enter a name: ")
+    
+def run_game():
 
 
-#Age Input
-age = input("Enter your age: ")
-while not age.isnumeric():
- age = input("Enter your age, should be a number: ")
+    print("Welcome to the Mad Libs Game")
+    time.sleep(2) 
 
-#Adjectives List
-adj = ['perfect', 'rough', 'gentle']
-print('Select an adjective: ')
-adjectiveFirst = inputsList(adj, " an adjective")
+    #Calls the Question Function   
+    
+    question()               
+    time.sleep(2)
 
-#Colors List
-colour = ['red', 'blue', 'green']
-print ('Select a color')
-colorFirst = inputsList(colour, "a color")
+    #User inputs story
 
-#Nouns List
-nouns= ['car', 'money', 'banana']
-print('Select a noun: ')
-nounFirst = inputsList(nouns, "a noun")
+    #Name input
+    name = input("Enter your name: ")
+    while not name.isalpha():
+        name= input("Enter a name: ")
 
-#Verbs list
-verbs= ['running', 'starving', 'loving']
-print('Select a verb: ')
-verbFirst = inputsList(verbs, "a verb")
+    #Age Input
+    age = input("Enter your age: ")
+    while not age.isnumeric():
+        age = input("Enter your age, should be a number: ")
 
-#Clothings List
-clothings = ['socks', 'pajamas', 'skirt']
-print ('Select your clothing')
-clothingsFirst = inputsList(clothings, "a clothing")
+    #Adjectives List
+    adj = ['perfect', 'rough', 'gentle']
+    print('Select an adjective: ')
+    adjectiveFirst = inputs_list(adj, " an adjective")
 
-#Adjectives Second List
-adjSecond= ['angry', 'able', 'busy']
-print('Select an adjective: ')
-adjectivesSecond = inputsList(adjSecond, "an adjective")
+    #Colors List
+    colorFirst = select_color()
 
-#Celebrities List
-celeb= ['Ryan Reynolds', 'Emma Stone', 'Tom Hanks']
-print('Select a celebrity: ')
-celebrities = inputsList(celeb, "a celebrity")
+    #Nouns List
+    nouns= ['car', 'money', 'banana']
+    print('Select a noun: ')
+    nounFirst = inputs_list(nouns, "a noun")
 
-#Number Input
-number = input('Enter a number: ')
-while not number.isnumeric(): 
- number = input('Enter a number, should be a number: ')
+    #Verbs list
+    verbs= ['running', 'starving', 'loving']
+    print('Select a verb: ')
+    verbFirst = inputs_list(verbs, "a verb")
 
-#Friend First Input
-friend = input('Enter the name of a friend: ')
-while not friend.isalpha():
- friend = input('Invalida data: Enter a name: ')
+    #Clothings List
+    clothings = ['sock', 'pajama', 'skirt']
+    print ('Select your clothing')
+    clothingsFirst = inputs_list(clothings, "a clothing")
 
-#Nouns Second List
-nounsSecond = ['wood', 'ukelele', 'smoothie']
-print('Select a noun: ')
-nounSecond = inputsList(nounsSecond, "a noun")
+    #Adjectives Second List
+    adjSecond= ['angry', 'able', 'busy']
+    print('Select an adjective: ')
+    adjectivesSecond = inputs_list(adjSecond, "an adjective")
 
-#Friend Second Input
-friendSecond = input('Enter the name of another friend: ')
-while not friendSecond.isalpha():
- friendSecond = input('Invalida data: Enter a name: ')
+    #Celebrities List
+    celeb= ['Ryan Reynolds', 'Emma Stone', 'Tom Hanks']
+    print('Select a celebrity: ')
+    celebrities = inputs_list(celeb, "a celebrity")
 
-time.sleep(1)
+    #Number Input
+    number = input('Enter a number: ')
+    while not number.isnumeric(): 
+        number = input('Enter a number, should be a number: ')
 
-# Print story - Concat the inputs together in a story
+    #Friend First Input
+    friend = input('Enter the name of a friend: ')
+    while not friend.isalpha():
+        friend = input('Invalida data: Enter a name: ')
 
-print('\nTitle: If I were president.')
-print('\n')
-time.sleep(3)
-print("My name is " + name + " and I'm " + age + " years old.")
-time.sleep(3)
-print("If I were president, I'd do a whole bunch of " + adjectiveFirst + " things:")
-time.sleep(3)
-print("I would drive the biggest " + colorFirst + " car in the country, and that")
-time.sleep(3)
-print("car would go faster than any other " + nounFirst + " in the world!")
-time.sleep(3)
-print("Everyone would eat pepperoni pizza for dinner.")
-time.sleep(3)
-print("I would live in the Statue of Liberty and build a " + verbFirst + " pool at her feet.")
-time.sleep(3)
-print("I would wear a/an " + clothingsFirst + " on my head, and everyone would say I look " + adjectivesSecond + " like " + celebrities + ".")
-time.sleep(3)
-print("School would be open only " + number + " days a year.")
-time.sleep(3)
-print("I would give my friends the best jobs.")
-time.sleep(3)
-print("I would nominate " + friend + " to be secretary of the " + nounSecond + ",")
-time.sleep(3)
-print("and " + friendSecond + " could be vice president !")
-time.sleep(3)
+    #Nouns Second List
+    nounsSecond = ['wood', 'ukelele', 'smoothie']
+    print('Select a noun: ')
+    nounSecond = inputs_list(nounsSecond, "a noun")
+
+    #Friend Second Input
+    friendSecond = input('Enter the name of another friend: ')
+    while not friendSecond.isalpha():
+        friendSecond = input('Invalida data: Enter a name: ')
+
+    time.sleep(1)
+
+    # Print story - Concat the inputs together in a story
+    print('\nTitle: If I were president.')
+    print('\n')
+    time.sleep(3)
+    print("My name is " + name + " and I'm " + age + " years old.")
+    time.sleep(3)
+    print("If I were president, I'd do a whole bunch of " + adjectiveFirst + " things:")
+    time.sleep(3)
+    print("I would drive the biggest " + colorFirst + " car in the country, and that")
+    time.sleep(3)
+    print("car would go faster than any other " + nounFirst + " in the world!")
+    time.sleep(3)
+    print("Everyone would eat pepperoni pizza for dinner.")
+    time.sleep(3)
+    print("I would live in the Statue of Liberty and build a " + verbFirst + " pool at her feet.")
+    time.sleep(3)
+    print("I would wear a " + clothingsFirst + " on my head, and everyone would say I look " + adjectivesSecond + " like " + celebrities + ".")
+    time.sleep(3)
+    print("School would be open only " + number + " days a year.")
+    time.sleep(3)
+    print("I would give my friends the best jobs.")
+    time.sleep(3)
+    print("I would nominate " + friend + " to be secretary of the " + nounSecond + ",")
+    time.sleep(3)
+    print("and " + friendSecond + " could be vice president !")
+    time.sleep(3)
+
+if __name__ == '__main__':
+    run_game()
