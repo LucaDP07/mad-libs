@@ -116,7 +116,7 @@ def select_friend_two():
     friend_second = input('Enter the name of another friend: ')
     while not friend_second.isalpha():
         friend_second = input('Invalida data: Enter a name: ')
-        return friend_second
+    return friend_second
 
 
 def run_game():
