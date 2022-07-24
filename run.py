@@ -8,7 +8,7 @@ def inputs_list(a, b):
         print(i+1, element)
     chosen = input('')
     while not chosen.isnumeric() or int(chosen) > len(a) or int(chosen) <= 0:
-        chosen = input("Invalid data: Select" + b)
+        chosen = input("Invalid data: Select\n" + b)
     el = a[int(chosen)-1]
     return el
 
@@ -18,25 +18,25 @@ def inputs_list(a, b):
 def start_game():
     answer = input("Let's play, shall we?\n")
     while not any(answer.lower() == f for f in ['yes', 'y', "no", "n"]):
-        answer = input('Please enter yes or no')
+        answer = input('Please enter yes or no\n')
     if any(answer.lower() == f for f in ['yes', 'y']):
-        print("Cool, let's play the game!")
+        print("Cool, let's play the game!\n")
     else:
         print("That's fine. See you soon\n")
         quit()
 
 
 def select_name():
-    name = input("Enter your name: ")
+    name = input("Enter your name:\n ")
     while not name.isalpha():
-        name = input("Enter a name: ")
+        name = input("Enter a name:\n ")
     return name
 
 
 def select_age():
-    age = input("Enter your age: ")
+    age = input("Enter your age:\n ")
     while not age.isnumeric():
-        age = input("Enter your age, should be a number: ")
+        age = input("Enter your age, should be a number:\n ")
     return age
 
 
@@ -90,16 +90,16 @@ def select_celebrity():
 
 
 def select_number():
-    number = input('Enter a number: ')
+    number = input('Enter a number:\n ')
     while not number.isnumeric():
         number = input('Enter a number, should be a number: ')
     return number
 
 
 def select_friend():
-    friend = input('Enter the name of a friend: ')
+    friend = input('Enter the name of a friend:\n ')
     while not friend.isalpha():
-        friend = input('Invalida data: Enter a name: ')
+        friend = input('Invalida data: Enter a name:\n ')
     return friend
 
 
@@ -111,9 +111,9 @@ def select_noun_two():
 
 
 def select_friend_two():
-    friend_second = input('Enter the name of another friend: ')
+    friend_second = input('Enter the name of another friend:\n ')
     while not friend_second.isalpha():
-        friend_second = input('Invalida data: Enter a name: ')
+        friend_second = input('Invalida data: Enter a name:\n ')
     return friend_second
 
 
