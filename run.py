@@ -7,7 +7,7 @@ def inputs_list(a, b):
     for i, element in enumerate(a):
         print(i+1, element)
     chosen = input('')
-    while not chosen.isnumeric() or int(chosen) > len(a):
+    while not chosen.isnumeric() or int(chosen) > len(a) or int(chosen) <= 0:
         chosen = input("Invalid data: Select" + b)
     el = a[int(chosen)-1]
     return el
@@ -24,8 +24,6 @@ def start_game():
     else:
         print("That's fine. See you soon\n")
         quit()
-
-# Welcome message
 
 
 def select_name():
@@ -137,7 +135,7 @@ def run_game():
     age = select_age()
 
     # Adjectives List
-    adjective_first = select_adjective
+    adjective_first = select_adjective()
 
     # Colors List
     color_first = select_color()
@@ -198,5 +196,7 @@ def run_game():
     print("and " + friend_second + " could be vice president !")
     time.sleep(3)
 
-    if __name__ == '__main__':
-        run_game()
+
+if __name__ == '__main__':
+    run_game()
+
