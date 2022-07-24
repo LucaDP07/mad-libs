@@ -1,8 +1,12 @@
+# Python Text Based Game - If I were president
+# Story taken and adapted from the website readbrightly.com
+
+
+# Import time to print typewriter effect.
 import time
 
-# Function inputs Lists
 
-
+# Function to set requiremets for the items in the lists
 def inputs_list(a, b):
     for i, element in enumerate(a):
         print(i+1, element)
@@ -12,9 +16,8 @@ def inputs_list(a, b):
     el = a[int(chosen)-1]
     return el
 
-# Function to start the game
 
-
+# Intro function begins the game and welcome the player
 def start_game():
     answer = input("Let's play, shall we?\n")
     while not any(answer.lower() == f for f in ['yes', 'y', "no", "n"]):
@@ -199,4 +202,5 @@ def run_game():
 
 if __name__ == '__main__':
     run_game()
+
 
