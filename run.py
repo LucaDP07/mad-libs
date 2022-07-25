@@ -198,9 +198,9 @@ def run_game():
     time.sleep(3)
     print("and " + friend_second + " could be vice president !")
     time.sleep(3)
+    print("The End")
+
 
 
 if __name__ == '__main__':
     run_game()
-
-
