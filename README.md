@@ -5,7 +5,7 @@
 
 This Mad Libs is a word game where the user has to enter some words (e.g. person’s name, noun, adjective, place, object etc.) and substitute these with blanks in a story. These word substitutions have a humorous effect when the resulting story is then read aloud. 
 
-This Mad Libs Generator teaches to manipulate user-inputted data as the game refers to a series of inputs that a user enters. After all the inputs are entered the application takes all the data and arranges it to build a story template.
+This Mad Libs Generator teaches to manipulate user-inputted data as the game refers to a series of inputs that a user enters. After all the inputs are entered the application takes all the data and arranges it to build a story template. This game is completely written in Python.
 
 ![Alternate text](/assets/images/Responsive.png)
 
@@ -14,47 +14,15 @@ You can view the deployed website [here](https://mad-libs01.herokuapp.com/).
 **UX**
 - - -
 
-The website is designed for any type of screen in mind (Desktop, Smartphone and Tablet). The structure of each section is simple, user friendly and clear. The selection of colors are inspired by the Irish and Ivory Coast flag, which are the core of the game. The main board has been created to contain the instructions, the game itself and a message showing the final score. All this provides a familiar and not confusing experience to the user. 
+The game is designed for kids and motivates them to think ouside the box when it comes to parts of speech. At the same time the game provides a fun way to use different words. Even though, the main target are children between 6 and 12 years old, adults as well can play and have fun with their kids or even by themself.
 
 **User Stories**
 
-As someone who is passionate about reaction time games, I want to challenge my reflexes.
+As a user I want to be able to:
 
-As a flags lover I would like to experience a game based on flags. 
-
-As a random gamer I would like to experience a clear design for each section and an easy navigation through all of them.
-
-**WIREFRAMES**
-- - -
-
-**Home Page**
-
-![Alternate text](/assets/images/1desktop.png)
-
-**Game Page**
-
-![Alternate text](/assets/images/2desktop.png)
-
-**Final Score Page**
-
-![Alternate text](/assets/images/3desktop.png)
-
-**Home Page: Tablet View**
-
-![Alternate text](/assets/images/1tablet.png)
-
-**Game Page: Tablet View**
-
-![Alternate text](/assets/images/2tablet.png)
-
-**Home Page: Mobile View**
-
-![Alternate text](/assets/images/1smartphone.png)
-
-**Game Page: Mobile View**
-
-![Alternate text](/assets/images/2smartphone.png)
-
+- Easily navigate between the different functions available in the application.
+- Enjoy playing word game.
+- Clearly understand how to interact with the application and get clear feedback for any action taken.
 
 **FEATURES**
 - - -
