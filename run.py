@@ -62,7 +62,7 @@ def select_age():
 def select_adjective():
     adj = ['stupid', 'rough', 'crazy']
     print('Select an adjective: ')
-    adjective_one = inputs_list(adj, " an adjective ")
+    adjective_one = inputs_list(adj, " an adjective: ")
     return adjective_one
 
 # This function allows the player a choice in response.
@@ -71,7 +71,7 @@ def select_adjective():
 def select_color():
     colour = ['red', 'blue', 'green']
     print('Select a color: ')
-    color_first = inputs_list(colour, "a color ")
+    color_first = inputs_list(colour, "a color: ")
     return color_first
 
 # This function allows the player a choice in response.
@@ -80,7 +80,7 @@ def select_color():
 def select_noun():
     nouns = ['car', 'money', 'banana']
     print('Select a noun: ')
-    noun_first = inputs_list(nouns, "a noun ")
+    noun_first = inputs_list(nouns, "a noun: ")
     return noun_first
 
 # This function allows the player a choice in response.
@@ -89,7 +89,7 @@ def select_noun():
 def select_verb():
     verbs = ['running', 'starving', 'loving']
     print('Select a verb: ')
-    verb_first = inputs_list(verbs, "a verb ")
+    verb_first = inputs_list(verbs, "a verb: ")
     return verb_first
 
 # This function allows the player a choice in response.
@@ -98,7 +98,7 @@ def select_verb():
 def select_clothing():
     clothings = ['sock', 'pajama', 'skirt']
     print('Select your clothing: ')
-    clothings_first = inputs_list(clothings, "a clothing ")
+    clothings_first = inputs_list(clothings, "a clothing: ")
     return clothings_first
 
 # This function allows the player a choice in response.
@@ -107,7 +107,7 @@ def select_clothing():
 def select_adjective_second():
     adj_second = ['angry', 'able', 'busy']
     print('Select an adjective: ')
-    adjectives_two = inputs_list(adj_second, "an adjective ")
+    adjectives_two = inputs_list(adj_second, "an adjective: ")
     return adjectives_two
 
 # This function allows the player a choice in response.
@@ -116,7 +116,7 @@ def select_adjective_second():
 def select_celebrity():
     celeb = ['Al Pacino', 'Emma Stone', 'Tom Hanks']
     print('Select a celebrity: ')
-    celebrities = inputs_list(celeb, "a celebrity ")
+    celebrities = inputs_list(celeb, "a celebrity: ")
     return celebrities
 
 # While loop to ensure user adds a number.
@@ -143,7 +143,7 @@ def select_friend():
 def select_noun_two():
     nouns_second = ['forest', 'cave', 'car park']
     print('Select a noun: ')
-    noun_second = inputs_list(nouns_second, "a noun ")
+    noun_second = inputs_list(nouns_second, "a noun: ")
     return noun_second
 
 # While loop to ensure user adds a name.
@@ -158,7 +158,7 @@ def select_friend_two():
 
 def run_game():
     print("Welcome to the Mad Libs Game!")  # greeting message
-    
+
     # The time sleep function creates a time delay at the end
     # of each sentance/block for a certain amount of seconds.
     time.sleep(2)
