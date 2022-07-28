@@ -14,7 +14,7 @@ You can view the deployed website [here](https://mad-libs01.herokuapp.com/).
 **UX**
 - - -
 
-The game is designed for kids and motivates them to think ouside the box when it comes to parts of speech. At the same time the game provides a fun way to use different words. Even though, the main target are children between 6 and 12 years old, adults as well can play and have fun with their kids or even by themself.
+The game is designed for kids and motivates them to think ouside the box when it comes to parts of speech. At the same time the game provides a fun way to use different words. Even though the main target are children between 6 and 12 years old, adults as well can play and have fun with their kids or even by themself.
 
 **User Stories**
 
@@ -30,11 +30,11 @@ As a user I want to be able to:
  Game Process
  
  - Upon launching the app a welcome message is      displayed. This identifies the name of the game: “The Mad Libs Game”.
- - User will be then asked if they want to start the game or leave it. If 'y' or ‘yes’ is pressed , the game will be displayed. If the user, instead, decides to enter ’n’ or ‘no’, the game will quit. 
- - No empty input field are allowed at any stage of the game. The user is provided with feedback on what has gone wrong and the question is asked again.
+ - User will be then asked if they want to start the game or leave it. If 'y' is pressed , the game will be displayed. If the user, instead, decides to enter ’n’, the game will quit. 
+ - No empty input fields are allowed at any stage of the game. The user is provided with feedback on what has gone wrong and the question is asked again.
  - As first thing, the user is asked to enter his/her name. It can actually be any name, even a funny one, but all the characters entered have to be alphabets. Numbers or any other sign won’t be accepted. If the user enters an incorrect value an error message is displayed.
  - After the name, the user has to enter the age. Once again, only numbers are allowed and an error message will be displayed in case the player enters letters or signs.
- - Once name and age are entered, the user is asked to choose some words (e.g. noun, adjective, etc.) from a list of three options. The player can choose between one of them in order to complete the story. Considering the fact that the options are three, only numbers greater than 0 and lower than 3 can be accepted.
+ - Once name and age are entered, the user is asked to choose some words (e.g. noun, adjective, etc.) from a list of three options. The player can choose between one of them in order to complete the story. Considering the fact that the options are three, only numbers greater than 0 and lower than 3 or equal to three can be accepted.
  - Finally the user has to enter a number and the name of two friends. Should any incorrect data be used, a feedback will be provided and the user asked again to enter the correct data.
 
  
@@ -53,13 +53,6 @@ Future Features
 - I would like to add a choice of stories, so that the player can choose from a list with different themes.
 - I am aware that the code written may not be the most efficient. I rather focused on creating solutions to build a fully functioning program with the code I learned and understand during the short space of time given for the course module completion and the project submission deadline. My idea would be to improve the interactivity of the program once I get more time and knowledge about Python.
 
-- HTML: HTML has been used to give structure and content to the website.
-- CSS: In order to style the content created with HTML, the CSS language has been used.
-- Google Fonts: I used the Kanit and sans-serif font.
-- Font Awesome: I used ther Font Awesome icons for the logo of the game located at the left of the heading.
-- Pixabay: I used this platform for the images of the flags.
-- Balsamiq Wireframes: I used it to produce low fidelity wireframes to organise the structure of the pages.
-
 **TECHNOLOGIES**
 
 - [Python](https://www.python.org/) was used to create the project.
@@ -75,7 +68,7 @@ Future Features
 
 - All input elements were tested to prevent user from entering unwanted data. Invalid data were entered to ensure that invalid user input returns appropriate feedback to the user.
 - The code was tested using both GitPod terminal and the Heroku deployed site to ensure platform issues were not present in both displays.
-- [Python](https://www.online-python.com/) was used throughout the project's building/testing stage to troubleshoot for errors.
+- [Online Python](https://www.online-python.com/) was used throughout the project's building/testing stage to troubleshoot for errors.
 - The code has been validated through [PEP8 online](http://pep8online.com/). At the time of project submission, there were no errors detected in the PEP8 validator as below.
 
 ![Alternate text](/images/Validator.png)
@@ -115,7 +108,7 @@ Deployment procedure
 **MEDIA**
 - - -
 
-- The story for the mad lib was taken and adapted from the website [ReadBrightly](readbrightly.com)
+- The story for the mad lib was taken and adapted from the website [ReadBrightly](https://www.readbrightly.com/)
 
 - Screenshot under the section "site overview" was created with [Am I responsive](https://ui.dev/amiresponsive).
 
