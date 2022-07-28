@@ -73,7 +73,12 @@ Future Features
 **TESTING**
 - - - 
 
-All the pages of the website have ben tested using the developer tools in Google Chrome. The code had to be changed along the process in order to achieve the responsiveness required for the project. The preview from Gitpod helped to constantly check all the changes made.
+- All input elements were tested to prevent user from entering unwanted data. Invalid data were entered to ensure that invalid user input returns appropriate feedback to the user.
+- The code was tested using both GitPod terminal and the Heroku deployed site to ensure platform issues were not present in both displays.
+- [Python](https://www.online-python.com/) was used throughout the project's building/testing stage to troubleshoot for errors.
+- The code has been validated through [PEP8 online](http://pep8online.com/). At the time of project submission, there were no errors detected in the PEP8 validator as below.
+
+![Alternate text](/images/Validator.png)
 
 Testing was performed using a MacBook Air (M1, 2020) on macOS Monterey with the following browsers:
 - Google Chrome 102.0.5005.61
