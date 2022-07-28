@@ -48,8 +48,10 @@ As a user I want to be able to:
 
 ![Alternate text](/images/Error2.png)
 
-**TECHNOLOGIES USED**
-- - -
+Future Features
+
+- I would like to add a choice of stories, so that the player can choose from a list with different themes.
+- I am aware that the code written may not be the most efficient. I rather focused on creating solutions to build a fully functioning program with the code I learned and understand during the short space of time given for the course module completion and the project submission deadline. My idea would be to improve the interactivity of the program once I get more time and knowledge about Python.
 
 - HTML: HTML has been used to give structure and content to the website.
 - CSS: In order to style the content created with HTML, the CSS language has been used.
@@ -57,6 +59,15 @@ As a user I want to be able to:
 - Font Awesome: I used ther Font Awesome icons for the logo of the game located at the left of the heading.
 - Pixabay: I used this platform for the images of the flags.
 - Balsamiq Wireframes: I used it to produce low fidelity wireframes to organise the structure of the pages.
+
+**TECHNOLOGIES**
+
+- [Python](https://www.python.org/) was used to create the project.
+- Time method is used to control the display speed to prevent the text displaying too fast.
+- The Code Institute's [GitHub full template](https://github.com/Code-Institute-Org/python-essentials-template) for Python is used in order for the program to display properly in the deployed site on Heroku.
+- [GitHub](https://github.com/) was used to host repository.
+- [GitPod](https://www.gitpod.io/) was used to develop the project.
+- [Heroku](https://dashboard.heroku.com/apps) was used to deploy the application and provides an environment in which the code can execute
 
 
 **TESTING**
