@@ -30,9 +30,9 @@ def inputs_list(a, b):
 
 def start_game():
     answer = input("Let's play, shall we? y/n\n")
-    while not any(answer.lower() == f for f in ['yes', 'y', "no", "n"]):
-        answer = input('Please enter yes or no\n')
-    if any(answer.lower() == f for f in ['yes', 'y']):
+    while not any(answer.lower() == f for f in ["y", "n"]):
+        answer = input('Please enter y or n\n')
+    if any(answer.lower() == f for f in ["y"]):
         print("Cool, let's play the game!\n")
     else:
         print("That's fine. See you soon!\n")

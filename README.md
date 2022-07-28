@@ -7,7 +7,7 @@ This Mad Libs is a word game where the user has to enter some words (e.g. person
 
 This Mad Libs Generator teaches to manipulate user-inputted data as the game refers to a series of inputs that a user enters. After all the inputs are entered the application takes all the data and arranges it to build a story template. This game is completely written in Python.
 
-![Alternate text](/assets/images/Responsive.png)
+![Alternate text](/images/Responsive.png)
 
 You can view the deployed website [here](https://mad-libs01.herokuapp.com/).
 
@@ -27,48 +27,26 @@ As a user I want to be able to:
 **FEATURES**
 - - -
 
- - The Game Logo and Heading
+ Game Process
  
- At the top of the page the user can find the logo and the heading of the game. These two features are consistent in all the sections.
+ - Upon launching the app a welcome message is      displayed. This identifies the name of the game: “The Mad Libs Game”.
+ - User will be then asked if they want to start the game or leave it. If 'y' or ‘yes’ is pressed , the game will be displayed. If the user, instead, decides to enter ’n’ or ‘no’, the game will quit. 
+ - No empty input field are allowed at any stage of the game. The user is provided with feedback on what has gone wrong and the question is asked again.
+ - As first thing, the user is asked to enter his/her name. It can actually be any name, even a funny one, but all the characters entered have to be alphabets. Numbers or any other sign won’t be accepted. If the user enters an incorrect value an error message is displayed.
+ - After the name, the user has to enter the age. Once again, only numbers are allowed and an error message will be displayed in case the player enters letters or signs.
+ - Once name and age are entered, the user is asked to choose some words (e.g. noun, adjective, etc.) from a list of three options. The player can choose between one of them in order to complete the story. Considering the fact that the options are three, only numbers greater than 0 and lower than 3 can be accepted.
+ - Finally the user has to enter a number and the name of two friends. Should any incorrect data be used, a feedback will be provided and the user asked again to enter the correct data.
 
- ![Alternate text](/assets/images/title.png)
-
-- The Instructions
-
-Here the user can find the rules of the game explained. Before starting to have fun, a quick look at the instructions will help to enjoy the game.
-
-![Alternate Text](/assets/images/Instructions.png)
-
- - The Start Button
  
- Right below the logo and the heading, the user can find the Start Button. Once the player has read the instructions, can simply click on ther button to start to play. In the Game Area the button will still be there and everytime the user will ends a game, simply by clicking the button a new game will be started.
+ Feedback for invalid inputs
 
- ![Alternate text](/assets/images/StartButton.png)
+ - Mad Lib data input
 
- - The Board Game
- 
- Once the user clicks on the Start Button, the game starts. The instructions will be replaced by a different set of six flags will be visible every 3 seconds. Five of these represent the Irish flag, while the last one it's the Ivory Coast flag, very similar to the Irish one. The player has 20 seconds to catch the Ivory Coast flag as many times as possible. Everytime the player clicks on the Ivory Coast flag a point will be added to the score, and to make sure the player is paying attention, every click on the Irish flag will take away 2 points.
+ ![Alternate text](/images/Error.png)
 
- ![Alternate text](/assets/images/board.png)
- 
- - The Current Score Area
- 
- Under the Start Button, the user can see the Current Score Area, which will be visible only in the Game Area. The score gets updated everytime the player clicks on the right or wrong flag. In this way the user has the chance to keep track of his/her performance.
+ - Yes/no input
 
- ![Alternate text](/assets/images/CurrentScore.png)
-
- - The Score Area and the Timer
-
- Under the Board Game, the user can find a timer of 20 seconds which will help to keep track of the time left to complete the game. Also, under the timer, the player can find the resume of the games won and lost. The colors choosen for it are green and orange as a connection to the irish flag.
-
- ![Alternate text](/assets/images/timer.png)
-
-  - The Final Score Message
-
- Once the 20 seconds are over the Game Board will display the final score which will replace the flags.
-
- ![Alternate text](/assets/images/ScoreMessage.png)
- 
+![Alternate text](/images/Error2.png)
 
 **TECHNOLOGIES USED**
 - - -
