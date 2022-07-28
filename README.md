@@ -85,69 +85,37 @@ Testing was performed using a MacBook Air (M1, 2020) on macOS Monterey with the 
 - Safari 15.3
 - Mozilla Firefox 101.0.1
 
-After testing the website I can confirm the project it's responsive in its all pages and works properly on all standard screen sizes.
-
-The "Play" button is working in each section of the project. 
-- In the Home Page the button starts the game. 
-- In the Board Game/Game Area the button reset the score and starts a new game.
-
-
-- BUGS
-
-While on GitPod I was able to see the flags flashing in the Board Game, after the deployment, the live site was not showing the same results as on GitPod. Since I was refencing my images from my css file, I had to tell the server to come out of the css folder. Sorted fixing the path.
-
-* VALIDATOR TESTING
-
-HTML: No errors were returned when passing through the official W3C Validator. (https://validator.w3.org/nu/#textarea).
-
-CSS: No errors were returned when passing through the official (Jigsaw) Validator (https://jigsaw.w3.org/css-validator/validator).
-
-JavaScript: No errors were found on the website when using [JSHint Validator]https://jshint.com/ .
-
-Accessibility: I generated a desktop and mobile report for the deployed site through the Google Chrome Dev Tools.
-
- - Home Page - Mobile
- ![Alternate text](/assets/images/lighthouse.png)
- - Home Page - Desktop
- ![Alternate text](/assets/images/lighthouse_desktop.png)
-
- 
-- UNFIXED BUGS
-
-No unfixed bugs.
 
 **DEPLOYMENT**
 - - -
-The site was deployed to GitHub Pages. The steps to deploy are as follows:
+Deployment procedure
 
-1. Navigate to my Github repository: https://github.com/LucaDP07/flags-game
-2. In the GitHub repository navigate to the settings tab.
-3. Select the pages link from the setting menu on the left hand side.
-4. After selecting the main branch, the page provides the link to the completed website
-The live link can be found here: https://lucadp07.github.io/flags-game/
+1. Ensure all code is correct and ready for deployment.
+2. Enter the following code to import the required dependencies to the requirements.txt file:
+- pip3 freeze > requirements.txt
+- Heroku will use this file to import the dependencies that are required.
+
+3. Sign up and log in to Heroku
+4. Click on "Create new app" button.
+5. In the next page displayed, enter the project name, and select Europe as region, then click "Create app" button.
+6. Open settings page by pressing the settings tab. The following procedures have to be done in exact order. In the Buildpack section of the setting page, press Add Buildpack button and choose python then, click save changes. Select Add Buildpack button again and choose nodejs, then save changes
+7. Navigate to deploy page by clicking the tab "Choose GitHub" then click "Connect to GitHub" button. In the popup window, click authorize and then input password for GitHub Once the Git Hub repositories are connected, type in to search for the project, mad-libs. When the repository is found, click connect button for the repository. The GitHub button indicates connected when connection was successful.
+8. As I wanted to have control when to deploy the version, I have chosen manual deployment by pressing Deploy branch button instead of Enable Automatic Deploys.
+9. Once the deployment was completed a View button will appear. This View button will open the terminal game in the new window. [Here](https://mad-libs01.herokuapp.com/) is the deployed page.
+10. As manual deployment was chosen, I had to come back to Heroku deployment page whenever I have an updated working version pushed into the GitHub page.
 
 **CREDITS**
 - - - 
 
-**Content**
+- At the initial stage of the project, [this page](https://www.youtube.com/watch?v=O1m_UIr7wOQ&t=588s) has been used to get a general guidance on how to approach the work.
+- [Stack Overflow](https://stackoverflow.com/) was used to identify and resolve existing bugs.
+- [Python in easy steps book](https://ineasysteps.com/products-page/python-easy-steps-2nd-edition/) was used as a general source for the code.
+- [Online Python](https://www.online-python.com/) was used throughout the project's building/testing stage to troubleshoot for errors.
 
-- The Heading and the Logo were inspired by the [Love Maths](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+LM101+2021_T1/courseware/2d651bf3f23e48aeb9b9218871912b2e/a8ec361b95e94c25bf8a821654bd57bc/?child=first) Project.
+**MEDIA**
+- - -
 
-- The Timer structure was inspired by [WEB CIFAR](https://www.youtube.com/c/WEBCIFAROfficial).
-
-- The Score Area was inspired by the [Love Maths](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+LM101+2021_T1/courseware/2d651bf3f23e48aeb9b9218871912b2e/a8ec361b95e94c25bf8a821654bd57bc/?child=first) Project.
-
-- The Javascript code was inspired by the book [Get Coding](https://getcodingkids.com/the-book/).
-
-
-**Media**
-
-- The icon used for the logo was taken from [Font Awesome](https://fontawesome.com/).
-
-- All fonts imported from [Google Fonts](https://fonts.google.com/).
+- The story for the mad lib was taken and adapted from the website [ReadBrightly](readbrightly.com)
 
 - Screenshot under the section "site overview" was created with [Am I responsive](https://ui.dev/amiresponsive).
 
-- Pictures used for the Game have been taken from [Pixabay](https://pixabay.com/).
-
-- The wireframes have been created using [Balsamiq Wireframes](https://balsamiq.com/wireframes/).
