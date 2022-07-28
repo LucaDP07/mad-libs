@@ -73,11 +73,6 @@ Future Features
 
 ![Alternate text](/images/Validator.png)
 
-Testing was performed using a MacBook Air (M1, 2020) on macOS Monterey with the following browsers:
-- Google Chrome 102.0.5005.61
-- Safari 15.3
-- Mozilla Firefox 101.0.1
-
 
 **DEPLOYMENT**
 - - -
